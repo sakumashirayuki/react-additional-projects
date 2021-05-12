@@ -1,8 +1,19 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
+
+import Home from "./Home";
+import Movie from "./SingleMovie";
 
 function App() {
   return (
-    <h2>movie db</h2>
+    <Switch>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/movies/:id">
+        <Movie />
+      </Route>
+    </Switch>
   );
 }
 
