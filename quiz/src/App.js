@@ -22,7 +22,9 @@ function App() {
         return <Loading />;
     }
     const { question, correct_answer, incorrect_answers } = questions[index];
-    const answers = [...incorrect_answers, correct_answer];
+    let answers = [...incorrect_answers];
+    const tempIndex = Math.floor(Math.random() * 4);
+    answers = [...answers.slice(0, tempIndex), correct_answer, ...answers.slice(tempIndex)];
 
     const createMarkup = (html) => {
         return { __html: html };

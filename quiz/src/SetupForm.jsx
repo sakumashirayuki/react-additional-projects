@@ -37,6 +37,20 @@ const SetupForm = () => {
                             <option value="politics">politics</option>
                         </select>
                     </div>
+                    <div className="form-control">
+                        <label htmlFor="difficulty">select difficulty</label>
+                        <select
+                            name="difficulty"
+                            id="difficulty"
+                            className="form-input"
+                            value={quiz.difficulty}
+                            onChange={handleChange}
+                        >
+                            <option value="easy">easy</option>
+                            <option value="medium">medium</option>
+                            <option value="hard">hard</option>
+                        </select>
+                    </div>
                     {error && (
                         <p className="error">
                             can't generate questions, please try different

@@ -236,6 +236,24 @@ main{
   margin-right: auto;
 }
 
+.close-btn, .submit-btn{
+  border-radius: var(--radius);
+  border-color: transparent;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: var(--spacing);
+  font-size: 1rem;
+  background: #ffb100;
+  color: var(--clr-black);
+  transition: var(--transition);
+  cursor: pointer;  
+}
+
 /* Form */
 .setup-form h2 {
   margin-bottom: 2rem;
@@ -266,20 +284,6 @@ main{
   text-transform: capitalize;
 }
 
-.submit-btn {
-  border-radius: var(--radius);
-  border-color: transparent;
-  padding: 0.25rem 0.5rem;
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 2rem;
-  text-transform: capitalize;
-  font-weight: 700;
-  letter-spacing: var(--spacing);
-  font-size: 1rem;
-  background: #ffb100;
-  color: var(--clr-black);
-  transition: var(--transition);
-  cursor: pointer;
+.close-btn{
+  width: 50%;
 }
